@@ -64,8 +64,12 @@ virtualenv allows you to avoid installing Python packages globally which could b
 
 ### STEP 6 Install MariaDB 10.3 stable package
 
-	sudo apt update
-	sudo aptitude install mariadb-server
+	sudo apt-get install software-properties-common
+	sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
+	sudo add-apt-repository 'deb [arch=amd64,i386,ppc64el] http://ftp.ubuntu-tw.org/mirror/mariadb/repo/10.3/ubuntu xenial main'
+
+	sudo apt-get update
+	sudo apt-get install mariadb-server-10.3
 
 IMPORTENT:During this installation you'll be prompted to set the MySQL root password.If you are not prompted for the same You can initialize the MySQL server setup by executing the following command
 	
