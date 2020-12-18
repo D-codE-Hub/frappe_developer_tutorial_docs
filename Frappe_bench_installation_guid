@@ -25,7 +25,7 @@
 	
 	sudo apt-get install git
 
-### STEP 2 The python-dev package installation
+### STEP 2 The python-dev package installation python-dev contains the header files you need to build Python extensions.
 
 install Python 2.7.X dev package
 
@@ -33,11 +33,13 @@ install Python 2.7.X dev package
 
 OR
 	
-install Python 3.X dev package
+install Python 3.X dev package 
 
 	sudo apt-get install python3-dev
 
-### STEP 3 Install setuptools and pip (Python's Package Manager)
+### STEP 3 Install setuptools and pip (Python's Package Manager).
+Setuptools allow developers to more easily build and distribute Python packages, especially ones that have dependencies on other packages.
+pip is a package manager for Python. it's a tool that allows you to install and manage additional libraries and dependencies
 
 install Python 2.7.X 
 
@@ -50,6 +52,8 @@ install Python 3.X
 	sudo apt-get install python3-setuptools python3-pip
 
 ### STEP 4 Install virtualenv:
+virtualenv is used to manage Python packages for different projects. 
+virtualenv allows you to avoid installing Python packages globally which could break system tools or other projects.
 	
 	sudo apt-get install virtualenv
 
@@ -94,20 +98,23 @@ Now press (Ctrl-X) to exit
 	sudo service mysql restart
 
 ### STEP 9 install Redis 
+used as a database, cache, and message broker.
 	
 	sudo apt-get install redis-server
 
 ### STEP 10 install Node.js 12.X package
+Node.js is an open-source, Javascript runtime environment that lets you effortlessly develop fast and scalable web applications.
 
 	sudo apt-get install curl
 	curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 	sudo apt-get install -y nodejs
 
-### STEP 11  yarn as a package manager
+### STEP 11  yarn as a package manager Yarn is a package manager for JS
 	
 	sudo npm install -g yarn
 	
 ### STEP 12 PDF generation functionality provided by frappe, you'll need to install wkhtmltopdf
+wkhtmltopdf is an open source command line tool to render HTML into PDF format using the Qt WebKit rendering engine.
 
 	wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.bionic_amd64.deb
 	sudo apt install ./wkhtmltox_0.12.6-1.bionic_amd64.deb
