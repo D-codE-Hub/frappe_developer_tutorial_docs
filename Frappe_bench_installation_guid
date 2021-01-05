@@ -62,7 +62,11 @@ virtualenv allows you to avoid installing Python packages globally which could b
 	alias python=python3
 	alias pip=pip3
 
+
 ### STEP 6 Install MariaDB 10.3 stable package
+
+from repository please click on this link
+	https://downloads.mariadb.org/mariadb/repositories/#mirror=piconets
 
 	sudo apt-get install software-properties-common
 	sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
