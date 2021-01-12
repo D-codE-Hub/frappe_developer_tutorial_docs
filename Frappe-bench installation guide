@@ -119,15 +119,15 @@ Wkhtmltopdf is an open source simple and much effective command-line shell utili
     
 STEP 13 Create a user
 
-    sudo adduser DcodEFrappe
-    sudo usermod -aG sudo DcodEFrappe
-    su - DcodEFrappe
+    sudo adduser dcode-frappe
+    sudo usermod -aG sudo dcode-frappe
+    su - dcode-frappe
 
 STEP 14 install frappe-bench
 
     pip3 install frappe-bench
 
-IMPORTANT: you may wish to log out and log back into your terminal before next step and You must login / "su - DcodEFrappe"
+IMPORTANT: you may wish to log out and log back into your terminal before next step and You must login / "su - dcode-frappe"
     
     bench --version
    
