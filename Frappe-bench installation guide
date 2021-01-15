@@ -89,7 +89,7 @@ STEP 7  MySQL database development files
 
     sudo apt-get install libmysqlclient-dev
 
-STEP 8 Edit the mariadb configuration
+STEP 8 Edit the mariadb configuration ( unicode character encoding )
 
     sudo nano /etc/mysql/my.cnf
 
